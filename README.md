@@ -1,7 +1,7 @@
 # ListaDeCompras
 
 
-- [**Oque é HTML**](#oque-é-html)
+- [**O que é HTML**](#o-que-é-html)
 - [**Comentário no HTML**](#comentário-no-html)
 
 
