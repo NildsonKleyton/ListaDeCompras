@@ -6,7 +6,7 @@
 1. [Comentário no HTML](#comentário-no-html)
 1. [Anatomia das Tags](#anatomia-das-tags)
 1. [Atributos Globais mais utilizados](#atributos-globais-mais-utilizados)
-   - [class](#class)
+   - [class](#classe)
    - [contenteditable](edit)
    - [data](#data)
    - [hidden](#hidden)
@@ -66,7 +66,7 @@ Tudo que estiver dentro do espaço para comentário não aparecerá na página.
 
 ## **Atributos Globais mais utilizados**
 
-<id name="class">
+<id name="classe">
 
 - **class:**<br>
   &emsp;Usado para classificar o elemento, utilizando no CSS e no JavaScript
