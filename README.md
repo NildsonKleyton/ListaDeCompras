@@ -1,13 +1,13 @@
-# **HTML Conceitos** <!-- omit in toc -->
+<h1 align="center"> HTML Conceitos</h1>
 
 ## Sumario 
 
-1. [O que é HTML](#html) 
-1. [Comentário no HTML](#comentario)
-1. [Anatomia das Tags](#tags)
+1. [O que é HTML](#o-que-é-html) 
+1. [Comentário no HTML](#comentário-no-html)
+1. [Anatomia das Tags](#anatomia-das-tags)
 1. [Atributos Globais mais utilizados](#atributos-globais-mais-utilizados)
    - [class](#class)
-   - [contenteditable](contenteditable)
+   - [contenteditable](edit)
    - [data](#data)
    - [hidden](#hidden)
    - [id](#id)
@@ -25,52 +25,37 @@
 1. [Abreviação](#abreviação)
 1. [Detalhe de contato](#detalhe-de-contato)
 1. [Lista de Descrição](#lista-de-descrição)
-   - [](#)
-   - [](#)
-   - [](#)
+   - [Múltiplos termos e definições](#mtd)
+   - [Termo e definição única](#tdu)
+   - [Múltiplos termos, definição única](#m-u)
    - [Termo único, múltiplas definições](#u-m)
 2. [Representação de Código](#representação-de-código)
+<hr>
 
-
-## **O que é HTML** <id id="html">
-
+## **O que é HTML**
 &emsp;**HTML->** Hypertext Markup Language ( _Linguagem de Marcação de Hipertexto_ )
 
 ## **Comentário no HTML**
-
 &emsp;Para usar comentário no _HTML_ utilizamos assim _"\<!-- Comentário -->"_.
 Tudo que estiver dentro do espaço para comentário não aparecerá na página.
 
 ## **Anatomia das Tags**
-
 - **Abertura de tag**
-
   &emsp;_\<h1>_
-
 - **Fechamento de tag**
-
   &emsp;_\</h1>_
-
 - **Conteúdo**
-
   &emsp;_\<h1> Conteúdo aqui \</h1> <br>_
   &emsp;O conteúdo de uma Elemento pode ser outro Elemento.
-
 - **Elementos**
-
   &emsp;O _\<h1>_ é um elemento com com abertura, conteúdo e fechamento.
-
 - **Elementos Vazios**
-
   &emsp;O _\<img>_ é um elemento apenas com a abertura e contem atributos
-
 - **Atributos**
   &emsp;Atributos em um elemento serve para por **informações extras** ou como **configurações**.<br>
   **Ex.:** \<img src="" alt=""> onde **src** e **alt** são os atributos.
-
   - **Anatomia do Atributo**<br>
     nome = _"conteúdo"_
-
   - **Atributos boolean**<br>
     São os atributos que não precisam de conteúdo.<br>
     **Ex.:**
@@ -80,6 +65,7 @@ Tudo que estiver dentro do espaço para comentário não aparecerá na página.
     O _"disabled"_ significa desabilitado, o input é visível, mas nao pode ser usado.
 
 ## **Atributos Globais mais utilizados**
+
 <id id="class">
 
 - **class:**<br>
@@ -93,6 +79,8 @@ Tudo que estiver dentro do espaço para comentário não aparecerá na página.
 
   **Resultado** <div class="nome-da-class">conteúdo</div><br>
 
+<id id="edit">
+
 - **contenteditable:**<br>
   &emsp;Permite editar o conteúdo de um elemento na página, sempre que atualizar a página o conteúdo volta a origem.<br>
   **Ex.:**
@@ -103,12 +91,16 @@ Tudo que estiver dentro do espaço para comentário não aparecerá na página.
 
   **Resultado:** <div contenteditable="true">Modifique esta frase.</div><br>
 
-- **data-\*:**<br>
+<id id="data">
+
+- **data- \*:**<br>
   &emsp;Utilizado no JavaScript e também no CSS.<br>
 
   ```html
   <div data-id="">conteúdo\</div>
   ```
+
+<id id="hidden">
 
 - **hidden:**<br>
   &emsp;Esconde o elemento na página. Tipo boolean.<br>
@@ -118,15 +110,17 @@ Tudo que estiver dentro do espaço para comentário não aparecerá na página.
   <div hidden>conteúdo\</div>
   ```
 
+<id id="id">
+
 - **id:**<br>
   &emsp; _"id"_ só pode ter um por página, ou seja, o valor do id="valor" não pode repetir, podendo ter problemas no CSS ou JavaScript por esta repetindo.
-
   **Usamos assim:**
-
   ```html
   <div id="car">conteúdo de carro</div>
   <div id="moto">conteúdo de moto</div>
   ```
+
+<id id="style">
 
 - **style:**<br>
   &emsp;Utilizada para da estilo a um elemento, usando o CSS, geralmente é usado em arquivos esternos.
@@ -138,6 +132,8 @@ Tudo que estiver dentro do espaço para comentário não aparecerá na página.
 
   **Resultado**
   <div style="color:red ; width: 300px; border: 1px solid"> conteúdo</div><br>
+
+<id id="tabindex">
 
 - **tabindex:**<br>
   &emsp;Conforme é pressionado a tecla **_Tab_** no teclado, o curso move de acordo ao valor da tabindex<br>
@@ -157,6 +153,7 @@ Tudo que estiver dentro do espaço para comentário não aparecerá na página.
   \<input type="text" tabindex="4"><input type="text" tabindex="4"><br>
 
 <br>
+<id id="title">
 
 - **title:**
   &emsp;Define um título da tag, não muda na visualização na página, e mostra o título quando o mouse esta sob a tag.<br>
@@ -519,84 +516,77 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui officiis consequun
 &emsp;Um uso comum para estes elementos é para implementar um glossário ou exibir metadados (uma lista de pares chave e valor).<br>
 
 **Exemplos:**<br>
+<span id="mtd">
 
 - **Múltiplos termos e definições**
-
-```html
-<h3>Glossário</h3>
-<dl>
-  <dt>Hypertext</dt>
-  <dd>É um hiper texto com possibilidades...</dd>
-
-  <dt>Markup</dt>
-  <dd>Marcação do texto</dd>
-
-  <dt>Languague</dt>
-  <dd>Linguagem com sua semântica e sintaxe....</dd>
-</dl>
-```
-
-**Resultado:**
-
-<h3>Glossário</h3>
-<dl>
+  ```html
+  <h3>Glossário</h3>
+  <dl>
     <dt>Hypertext</dt>
     <dd>É um hiper texto com possibilidades...</dd>
+
     <dt>Markup</dt>
     <dd>Marcação do texto</dd>
+
     <dt>Languague</dt>
     <dd>Linguagem com sua semântica e sintaxe....</dd>
-</dl>
+  </dl>
+  ```
+  **Resultado:**
+  <h3>Glossário</h3>
+  <dl>
+      <dt>Hypertext</dt>
+      <dd>É um hiper texto com possibilidades...</dd>
+      <dt>Markup</dt>
+      <dd>Marcação do texto</dd>
+      <dt>Languague</dt>
+      <dd>Linguagem com sua semântica e sintaxe....</dd>
+  </dl>
+<span id="tdu">
 
 - **Termo e definição única**
-
-```html
-<dl>
-  <dt>Firefox</dt>
-  <dd>
-    Um navegador gráfico gratuito, de código aberto, multiplataforma
-    desenvolvido pela Mozilla Corporation e centenas de voluntários.
-  </dd>
-</dl>
-```
-
-**Resultado:**
-
-<dl>
-  <dt>Firefox</dt>
-  <dd>
-    Um navegador gráfico gratuito, de código aberto, multiplataforma
-     desenvolvido pela Mozilla Corporation e centenas de voluntários.
-  </dd>
-</dl>
+  ```html
+  <dl>
+    <dt>Firefox</dt>
+    <dd>
+      Um navegador gráfico gratuito, de código aberto, multiplataforma
+      desenvolvido pela Mozilla Corporation e centenas de voluntários.
+    </dd>
+  </dl>
+  ```
+  **Resultado:**
+  <dl>
+    <dt>Firefox</dt>
+    <dd>
+      Um navegador gráfico gratuito, de código aberto, multiplataforma
+      desenvolvido pela Mozilla Corporation e centenas de voluntários.
+    </dd>
+  </dl>
+<span id="m-u">
 
 - **Múltiplos termos, definição única**
-
-```html
-<dl>
-  <dt>Firefox</dt>
-  <dt>Mozilla Firefox</dt>
-  <dt>Fx</dt>
-  <dd>
-    Um navegador gráfico gratuito, de código aberto, multiplataforma
-    desenvolvido pela Mozilla Corporation e centenas de voluntários.
-  </dd>
-</dl>
-```
-
-**Resultado:**
-
-<dl>
-  <dt>Firefox</dt>
-  <dt>Mozilla Firefox</dt>
-  <dt>Fx</dt>
-  <dd>
-    Um navegador gráfico gratuito, de código aberto, multiplataforma
+  ```html
+  <dl>
+    <dt>Firefox</dt>
+    <dt>Mozilla Firefox</dt>
+    <dt>Fx</dt>
+    <dd>
+      Um navegador gráfico gratuito, de código aberto, multiplataforma
       desenvolvido pela Mozilla Corporation e centenas de voluntários.
-  </dd>
-</dl>
-
-<span id="u-m">
+    </dd>
+  </dl>
+  ```
+  **Resultado:**
+  <dl>
+    <dt>Firefox</dt>
+    <dt>Mozilla Firefox</dt>
+    <dt>Fx</dt>
+    <dd>
+      Um navegador gráfico gratuito, de código aberto, multiplataforma
+        desenvolvido pela Mozilla Corporation e centenas de voluntários.
+    </dd>
+  </dl>
+<span id="u-m" >
 
 - **Termo único, múltiplas definições** 
   ```html
@@ -627,7 +617,6 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui officiis consequun
   </dl> 
 ### **Representação de Código**
 &emsp;Para representar códigos ou blocos de códigos no HTML, podemos usar a tags:
-
 - \<code> Para mostra um ou mais código.
 
 - \<pre> Mostra blocos de código ou texto pre-formatodo,Se você precisar exibir caracteres reservados como <, >, &, "dentro da \<pre>tag, os caracteres devem ser escapados usando sua respectiva _entidade HTML_ .
