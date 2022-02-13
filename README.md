@@ -66,7 +66,7 @@ Tudo que estiver dentro do espaço para comentário não aparecerá na página.
 
 ## **Atributos Globais mais utilizados**
 
-<id id="class">
+<id name="class">
 
 - **class:**<br>
   &emsp;Usado para classificar o elemento, utilizando no CSS e no JavaScript
