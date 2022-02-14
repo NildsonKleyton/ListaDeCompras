@@ -1,5 +1,5 @@
-## Sumário 
-
+# Sumário 
+[HTML Conceitos](#html-conceitos)
 1. [O que é HTML](#o-que-é-html) 
 2. [Comentário no HTML](#comentário-no-html)
 3. [Anatomia das Tags](#anatomia-das-tags)
@@ -33,12 +33,11 @@
    7. [Representação de Código](#representação-de-código)
 
 <br><hr>
-<h1 align="center"> HTML Conceitos</h1>
+<h1 align="center">HTML Conceitos</h1>
 
 ## **O que é HTML**
 &emsp;**HTML->** Hypertext Markup Language ( _Linguagem de Marcação de Hipertexto_ )
  
-[Sumário :arrow_heading_up:](#sumário)
 ## **Comentário no HTML**
 &emsp;Para usar comentário no _HTML_ utilizamos assim _"\<!-- Comentário -->"_.
 Tudo que estiver dentro do espaço para comentário não aparecerá na página.
