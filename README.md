@@ -1,4 +1,4 @@
-## Sumario 
+## Sumário 
 
 1. [O que é HTML](#o-que-é-html) 
 2. [Comentário no HTML](#comentário-no-html)
@@ -38,7 +38,7 @@
 ## **O que é HTML**
 &emsp;**HTML->** Hypertext Markup Language ( _Linguagem de Marcação de Hipertexto_ )
  
-[:point_up: Voltar](#sumario)
+[Sumário :arrow_heading_up:](#sumário)
 ## **Comentário no HTML**
 &emsp;Para usar comentário no _HTML_ utilizamos assim _"\<!-- Comentário -->"_.
 Tudo que estiver dentro do espaço para comentário não aparecerá na página.
